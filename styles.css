@@ -1,6 +1,44 @@
 @font-face {
     font-family: Roboto;
-    src: url('./font/Roboto/Roboto-Regular.ttf');
+    src: url('./font/Roboto/Roboto-Medium.ttf');
     font-weight: normal;
     font-style: normal;
+}
+
+/*Codes couleurs*/
+:root {
+    --primaire: #9356DC;
+    --tertiaire: #99E2D0;
+    --secondaire: #FF79DA;
+    --danger : red;
+    --black: black;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size:  13px;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    width: 200px;
+    height: auto;
 }

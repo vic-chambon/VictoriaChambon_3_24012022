@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ohmyfood!</title>
-        <link rel="stylesheet" type="text/css" href="booki.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <script src="https://kit.fontawesome.com/276a7b4699.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -19,23 +19,26 @@
         <main>
 
     <!-- section  -->
+    <section id="section-localisation">
         <div>
             <form id="bouton-localisation" method="post" action="#">
                 <i class="fas fa-map-marker-alt icone-recherche"></i>
                 <input placeholder="Paris, Belleville" value="Paris, Belleville" type="text" name="localisation" size="25" maxlength="23"/>
             </form>
         </div>
+    </section>
 
+    <section id="section-presentation">
         <div>
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
         </div>
-
+    
         <div class="bouton-filtre flex-center">Explorer nos restaurants</div>
-
-    <section>
-        <h2>Fonctionnement</h2>
     </section>
+        
+    <section id="section-fonctionnement">
+        <h2>Fonctionnement</h2>
         <div>
             1
             <i class="fas fa-mobile-alt icone-telephone"></i>
@@ -55,7 +58,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="section-restaurants">
         <h2>Restaurants</h2>
 
         <div class="card-restaurant">
