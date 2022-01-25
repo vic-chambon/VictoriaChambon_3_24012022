@@ -16,15 +16,13 @@
         </div>
     </header>
 
-        <main>
+    <main>
 
     <!-- section  -->
     <section id="section-localisation">
         <div>
-            <form id="bouton-localisation" method="post" action="#">
-                <i class="fas fa-map-marker-alt icone-recherche"></i>
-                <input placeholder="Paris, Belleville" value="Paris, Belleville" type="text" name="localisation" size="25" maxlength="23"/>
-            </form>
+            <span><i class="fas fa-map-marker-alt icone-recherche"></i></span><span>Paris, Belleville</span>
+
         </div>
     </section>
 
@@ -34,26 +32,26 @@
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
         </div>
     
-        <div class="bouton-filtre flex-center">Explorer nos restaurants</div>
+        <div class="flex-center"><a class="bouton-filtre" href="#">Explorer nos restaurants</a></div>
     </section>
         
     <section id="section-fonctionnement">
         <h2>Fonctionnement</h2>
-        <div>
-            1
-            <i class="fas fa-mobile-alt icone-telephone"></i>
+        <div class="vignette-fonctionnement">
+            <div class="numero">1</div>
+            <div class="icone"><i class="fas fa-mobile-alt icone-telephone"></i></div>
             <div class="filtre-texte flex-center">Choisissez un restaurant</div>
         </div>
 
-        <div>
-            2
-            <i class="fas fa-list-ul icone-liste"></i>
+        <div class="vignette-fonctionnement">
+            <div class="numero">2</div>
+            <div class="icone"><i class="fas fa-list-ul icone-liste"></i></div>
             <div class="filtre-texte flex-center">Composez votre menu</div>
         </div>
 
-        <div>
-            3
-            <i class="fas fa-store icone-restaurant"></i>
+        <div class="vignette-fonctionnement">
+            <div class="numero">3</div>
+            <div class="icone"><i class="fas fa-store icone-restaurant"></i></div>
             <div class="filtre-texte flex-center">Dégustez restaurant</div>
         </div>
     </section>
