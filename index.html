@@ -38,95 +38,86 @@
     <section id="section-fonctionnement">
         <h2>Fonctionnement</h2>
         <div class="vignette-fonctionnement">
-            <div class="numero">1</div>
-            <div class="icone"><i class="fas fa-mobile-alt icone-telephone"></i></div>
-            <div class="vignette-texte">Choisissez un restaurant</div>
+            <div class="vignette-fonctionnement__numero">1</div>
+            <div class="vignette-fonctionnement__icone"><i class="fas fa-mobile-alt icone-telephone"></i></div>
+            <div class="vignette-fonctionnement__texte">Choisissez un restaurant</div>
         </div>
 
         <div class="vignette-fonctionnement">
-            <div class="numero">2</div>
-            <div class="icone"><i class="fas fa-list-ul icone-liste"></i></div>
-            <div class="vignette-texte">Composez votre menu</div>
+            <div class="vignette-fonctionnement__numero">2</div>
+            <div class="vignette-fonctionnement__icone"><i class="fas fa-list-ul icone-liste"></i></div>
+            <div class="vignette-fonctionnement__texte">Composez votre menu</div>
         </div>
 
-        <div class="vignette-fonctionnement-over">
-            <div class="numero">3</div>
-            <div class="icone-violet"><i class="fas fa-store icone-restaurant"></i></div>
-            <div class="vignette-texte">Dégustez restaurant</div>
+        <div class="vignette-fonctionnement vignette-fonctionnement--over">
+            <div class="vignette-fonctionnement__numero">3</div>
+            <div class="vignette-fonctionnement__icone vignette-fonctionnement--violet"><i class="fas fa-store icone-restaurant"></i></div>
+            <div class="vignette-fonctionnement__texte">Dégustez au restaurant</div>
         </div>
     </section>
 
     <section id="section-restaurants">
         <h2>Restaurants</h2>
 
-        <div class="card-restaurant">
-            <a href="#">
-                <div class="card-image">
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant La palette du goût">
-                </div>
+        <a href="#">
+            <div class="card-restaurant">
+                <div class="etiquette-nouveau">Nouveau</div>
+                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant La palette du goût">
                 <div class="card-body">
-                    <div class="card-title">
+                    <div>
                         <h3>La palette du goût</h3>
-                    </div>
-                    <div class="card-localisation">
                         <p>Ménilmontant</p>
                     </div>
                     <i class="far fa-heart icone-coeur"></i>
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
 
-        <div class="card-restaurant">
-            <a href="#">
-                <div class="card-image">
-                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant La note enchantée">
-                    <div class="etiquette-nouveau">Nouveau</div>
-                </div>
+        <a href="#">
+            <div class="card-restaurant">
+                <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant La note enchantée">
+                    <!-- <div class="etiquette-nouveau">Nouveau</div> -->
                 <div class="card-body">
-                    <div class="card-title">
+                    <div>
                         <h3>La note enchantée</h3>
-                    </div>
-                    <div class="card-location">
                         <p>Charonne</p>
                     </div>
-                    <i class="far fa-heart icone-coeur"></i>
+                    <div>
+                        <i class="far fa-heart icone-coeur"></i>
+                    </div>                
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
 
-        <div class="card-restaurant">
-            <a href="#">
-                <div class="card-image">
-                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant À la française">
-                </div>
+        <a href="#">
+            <div class="card-restaurant">
+                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant À la française">
                 <div class="card-body">
-                    <div class="card-title">
+                    <div>
                         <h3>À la française</h3>
-                    </div>
-                    <div class="card-localisation">
                         <p>Cité Rouge</p>
                     </div>
-                    <i class="far fa-heart icone-coeur"></i>
-                </div>
-            </a>
-        </div>
-
-        <div class="card-restaurant">
-            <a href="#">
-                <div class="card-image">
-                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant Le délice des sens">
-                </div>
-                <div class="card-body">
-                    <div class="card-title">
-                        <h3>Le délice des sens</h3>
+                    <div>
+                        <i class="far fa-heart icone-coeur"></i>
                     </div>
-                    <div class="card-localisation">
+                </div>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="card-restaurant">
+                <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant Le délice des sens">
+                <div class="card-body">
+                    <div>
+                        <h3>Le délice des sens</h3>
                         <p>Folie Méricourt</p>
                     </div>
-                    <i class="far fa-heart icone-coeur"></i>
+                    <div>
+                        <i class="far fa-heart icone-coeur"></i>
+                    </div>
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </section>
 </main>
 
@@ -134,10 +125,10 @@
     <h4>ohmyfood</h4>
     <nav>
         <ul>
-            <li><i class="fas fa-utensils icone-couverts"></i>Proposer un restaurant</li>
-            <li><i class="fas fa-hands-helping icone-couverts"></i>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li>Contacts</li>
+            <li><i class="fas fa-utensils icone-couverts largeur-min"></i>Proposer un restaurant</li>
+            <li><i class="fas fa-hands-helping icone-couverts largeur-min"></i>Devenir partenaire</li>
+            <li><div class="font">Mentions légales</div></li>
+            <li><div class="font">Contacts</div></li>
         </ul>
     </nav>
 </footer>
