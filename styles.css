@@ -192,6 +192,7 @@ header img {
     right: 10px;
     top: 10px;
     font-family: Roboto-Medium;
+    font-size: 16px;
     color: var(--tertiairesombre);
     padding: 6px;
     background-color: var(--tertiaire);
@@ -241,16 +242,39 @@ header img {
     font-size: 16px;
 }
 
-.card-body .icone-coeur {
+.card-body .icone-coeur__base {
     color: black;
     padding-right: 15px;
     font-size: 32px;
 }
 
-.card-body .icone-coeur:hover {
+.card-body .icone-coeur__favori {
     color: var(--secondaire);
-    background-color: var(--secondaire);
+    display: none;
 }
+
+
+
+.card-body .icone-coeur__base:active {
+    display: none;
+}
+
+
+.card-body .icone-coeur__base:active + .card-body > .icone-coeur__favori {
+    display: inline-block;
+}
+
+
+.card-body .icone-coeur__favori:active {
+    display: none;
+}
+
+
+.card-body .icone-coeur__favori:active + .card-body > .icone-coeur__base {
+    display: inline-block;
+}
+
+
 
 footer {
     background-color: var(--gris4);
