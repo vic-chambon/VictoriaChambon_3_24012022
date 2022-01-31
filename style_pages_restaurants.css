@@ -129,7 +129,7 @@ section {
 }
 
 #section-entrées {
-    padding-top: 40px;
+    padding-top: 15px;
 }
 
 .border-bottom {
@@ -177,6 +177,10 @@ section {
 
 .delay-3-seconds {
     animation-delay: 0.9s;
+}
+
+.delay-4-seconds {
+    animation-delay: 1.2s;
 }
 
 .vignette p {
