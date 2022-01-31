@@ -94,7 +94,7 @@ header a {
 }
 
 .card-restaurant {
-    background-color: var(--gris2);
+    background-color: var(--gris1);
     position: relative;
     margin-bottom: 0;
 
@@ -114,7 +114,7 @@ header a {
     border-radius: 40px 40px 0 0;
     position: absolute;
     bottom: -40px;
-    background-color: var(--gris2);
+    background-color: var(--gris1);
     width: 100%;
 
 }
@@ -125,7 +125,7 @@ header a {
 }
 
 section {
-    background-color: var(--gris2);
+    background-color: var(--gris1);
 }
 
 #section-entrées {
@@ -140,7 +140,7 @@ section {
 }
 
 .vignette {
-    background-color: var(--gris1);
+    background-color: white;
     border-radius: 18px;
     margin-top: 18px;
     margin-right: 12px;
@@ -205,7 +205,7 @@ section {
 }
 
 #commande {
-    background-color: var(--gris2);
+    background-color: var(--gris1);
     height: 120px;
     display: flex;
     justify-content: center;
