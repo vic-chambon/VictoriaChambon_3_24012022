@@ -26,9 +26,9 @@
     --tertiaire: #99E2D0;
     --tertiairesombre: #1E9C7C;
     --secondaire: #FF79DA;
-    --gris1: #F2F2F2;
-    --gris2: #E6E6E6;
-    --gris3: #D7D7D7;
+    --gris1: white;
+    --gris2: #f6f6f6;
+    --gris3: #eaeaea;
     --gris4: #404040;
     --danger : red;
     --black: black;
@@ -67,6 +67,7 @@ header {
     justify-content: center;
     height: 50px;
     padding-top: 25px;
+    box-shadow: 8px 8px 8px var(--gris4);
 }
 
 header img {
@@ -139,11 +140,20 @@ header img {
     padding-bottom: 12px;
     margin-left: 12px;
     box-shadow: 8px 8px 8px var(--gris3);
+
+    /*transform: scaleX(1);
+    animation-name: vignettes-foncitionnement;*/
 }
- 
+
+
+
+/*.vignette-fonctionnement__numero .vignette-fontionnement__icone .vignette-fonctionnement__texte:hover {
+    color: var(--primaire);
+}*/
+/* 
 .vignette-fonctionnement--over {
     background-color: var(--primaireclair);
-}
+}*/
 
 .vignette-fonctionnement__numero {
     font-size: 12px;
@@ -163,13 +173,34 @@ header img {
     padding: 18px;
 }
 
-.vignette-fonctionnement--violet {
+.vignette-fonctionnement:hover {
+    background-color: var(--primaireclair);
+    color: var(--primaire);
+    transform: scale(1.01);
+}
+
+.vignette-fonctionnement__icone:hover {
+    color: var(--primaire);
+}
+
+
+/*.vignette-fonctionnement--violet {
     color: var(--primaire);
 }
 
 .vignette-fonctionnement__texte {
     
-}
+}*/
+
+/*@keyframes vignettes-fonctionnement {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}*/
+
 
 #section-restaurants {
     background-color: var(--gris2);
@@ -209,17 +240,11 @@ header img {
     display: flex;
     justify-content: space-between;
     margin-top: 0;
-    padding-top: 8px;
+    padding-top: 10px;
     padding-bottom: 16px;
     border-radius: 0 0 15px 15px;
     width: 100%;
     background-color: white
-
-/*    text-align:left;  
-*/
-    
-/*    box-sizing: border-box; 
-*/  
 }
 
 .card-body h3 {
@@ -242,20 +267,54 @@ header img {
     font-size: 16px;
 }
 
+.card-body:hover {
+    background-color: var(--primaireclair);
+}
 
+.card-restaurant:hover {
+    background-color: var(--primaireclair);
+}
 
+.checkbox-heart {
+    position: absolute;
+    right: 45px;
+    bottom: 30px;
+}
 
-
-.icone-coeur {
-    color: black;
-    padding-right: 15px;
-    font-size: 32px;
-    position: relative;
-    z-index: 1;
+.fa-heart {
+    display: flex;
+    align-items: baseline;
+    font-size: 1.5em;
     cursor: pointer;
 }
 
-.icone-coeur:hover::after {
+.checkbox-heart input[type=checkbox], .checkbox-heart .check {
+    display: none;
+}
+
+.checkbox-heart input[type=checkbox]:checked ~ .check {
+    display: inline-block;
+}
+
+.checkbox-heart input[type=checkbox]:checked ~ .uncheck {
+    display: none;
+}
+
+.uncheck {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.check {
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+}
+
+
+/*.icone-coeur:hover::after {
     opacity: 1;
 }
 
@@ -271,7 +330,7 @@ header img {
     z-index: -1;
     transition: opacity 1000ms;
 }
-
+*/
 footer {
     background-color: var(--gris4);
     padding-left: 18px;
