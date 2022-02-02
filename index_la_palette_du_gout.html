@@ -23,18 +23,29 @@
         <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant La palette du goût">
         <div class="card-title">
             <h1>La palette du goût</h1>
-            <i class="far fa-heart icone-coeur__base"></i>
+            <label class="checkbox-heart">
+                    <input type="checkbox" name="">
+                    <i class="fas fa-heart uncheck"></i>
+                    <i class="fas fa-heart check"></i>
         </div>
         
     </div>
 
     <section id="section-entrées" class="padding-bottom">
         <h2>Entrées</h2>
+
         <div class="border-bottom"></div>
+
         <div class="vignette delay-1-seconds">
-            <h3>Fricassée d'escargot</h3>
-            <div class="vignette-excerpt"><p>Au piment d'espelette</p>
-                <div>25€</div>
+            <div class="vignette__left">
+                <h3>Fricassée d'escargot</h3>
+                <div class="vignette-excerpt">
+                    <p>Au piment d'espelette</p>
+                    <div class="prix">25€</div>
+                </div>
+            </div>
+            <div class="vignette__right">
+                <div class="bouton-check"><i class="fas fa-check-circle"></i></div>
             </div>
         </div>
 
@@ -49,7 +60,7 @@
             <h3>Oeuf au plat</h3>
             <div class="vignette-excerpt"><p>Assaisonné à la truffe sur lit de caviar</p>
                 <div>20€</div>
-            <div class="bouton-check"><i class="fa-solid fa-check"></i></div>
+            
             </div>
         </div>
     </section>
