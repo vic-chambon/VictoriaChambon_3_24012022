@@ -133,8 +133,7 @@ header img {
     padding-left: 18px;
     padding-right: 18px;
     padding-bottom: 20px;
-    /*display: flex;
-    justify-content: center;*/
+    
 }
 
 .vignette-fonctionnement {
@@ -381,4 +380,64 @@ footer nav ul li i {
 
 .font {
     font-family: Roboto-Light;
+}
+
+/*Mode tablette*/
+
+@media only screen and (min-width : 769px) and (max-width : 992px) {
+
+   /* #section-fontionnement {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+
+    .vignette-fonctionnement {
+        max-width: 31%;
+        
+
+    }*/
+
+    .restaurants {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+
+    .card-restaurant {
+        width: 48%;
+        margin-bottom: 25px;
+       
+        
+    }
+
+}
+
+@media screen and (min-width: 993px) {
+
+    .fonctionnement {
+        display: flex;
+
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+
+    .vignette-fonctionnement {
+        width: 31%;
+    }
+
+    .restaurants {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+
+    }
+
+    .card-restaurant {
+        width: 48%;
+        margin-bottom: 25px;
+               
+    }
 }
