@@ -185,46 +185,55 @@ section {
     margin-left: 12px;
     box-shadow: 6px 6px 6px var(--gris3);
     border-radius: 18px;
+    max-width: 100%;
 
     animation: menu 2000ms;
     animation-fill-mode: both;
     transform-origin: top;
 
     display: flex;
-    position: relative;
+    justify-content: space-between;
 }
 
 .vignette__left {
-    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    width: 100%;
 
     padding-left: 8px;
     padding-top: 10px;
     padding-bottom: 10px;
-
-    /*transform: scaleX(0.7);
-    transform-origin: 0% 50%;
-    transition: transform 2000ms;*/
 }
 
 .vignette__right {
-    position: absolute;
-    right: 0;
-    width: 30%;
-    height: 100%;
-
-    /*transform: scaleX(0.3);
+    width: 0;
+    min-height: 100%;
     transform-origin: 100% 50%;
-    transition: transform 2000ms;*/
+    opacity: 0;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 
-@keyframes click_check {
+.vignette:hover .vignette__right {
+    width: 20%;
+    opacity: 100%;
+}
+
+.vignette:hover .bouton-check__rotate {
+    transform: rotate(0deg);
+}
+
+/*@keyframes hover_plat {
     from {
     }
 
     to {
-        transform: scalex(0);
+        transform: translateX(-20%);
+        transition: transform 2000ms;
     }
 }
+*/
 
 .bouton-check {
     height: 100%;
@@ -236,6 +245,11 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.bouton-check__rotate {
+    transform: rotate(360deg);
+    transition: 0.4s ease-in-out;    
 }
 
 .fa-check-circle {
@@ -289,7 +303,9 @@ section {
     font-family: Roboto-Light;
     padding-bottom: 5px;
     padding-top: 5px;
-    padding-left: 5px
+    padding-left: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .padding-bottom {

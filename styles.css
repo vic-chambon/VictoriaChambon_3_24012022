@@ -187,7 +187,7 @@ header img {
     transform: scale(1.01);
 }
 
-.vignette-fonctionnement__icone:hover {
+.vignette-fonctionnement:hover .vignette-fonctionnement__icone {
     color: var(--primaire);
 }
 
