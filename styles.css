@@ -225,12 +225,12 @@ header img {
     background-color: white;
     margin-bottom: 18px;
     box-shadow: 6px 6px 6px var(--gris3);
-    position: relative;
+    
 }
 
 .etiquette-nouveau {
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 10px;
     font-family: Roboto-Medium;
     font-size: 16px;
@@ -239,10 +239,20 @@ header img {
     background-color: var(--tertiaire);
 }
 
-.card-restaurant img {
-    object-fit: cover;
-    width: 100%;
+.card-image {
     height: 170px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px 24px 0 0; 
+}
+
+.card-image img {
+    /*object-fit: cover;*/
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 24px 24px 0 0;   
 }
 
@@ -254,7 +264,9 @@ header img {
     padding-bottom: 16px;
     border-radius: 0 0 15px 15px;
     width: 100%;
-    background-color: white
+    background-color: white;
+    position: relative;
+
 }
 
 .card-body h3 {
@@ -287,8 +299,8 @@ header img {
 
 .checkbox-heart {
     position: absolute;
-    right: 45px;
-    bottom: 30px;
+    right: 30px;
+    bottom: 25px;
 }
 
 .fa-heart {
