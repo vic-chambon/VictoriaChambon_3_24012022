@@ -86,6 +86,7 @@ header img {
     display: flex;
     justify-content: center;
     padding: 15px 0 15px 0;
+    box-shadow: 0px 0px 8px 0px var(--gris4);
 }
 
 #section-localisation span {
@@ -119,11 +120,12 @@ header img {
 
 
 .bouton-filtre {
-    background: #FF79DA;
+    background: var(--secondaire);
     padding: 15px;
     background: linear-gradient(170deg, var(--secondaire) 20%, var(--primaire) 70%);
     color:  white;
     border-radius: 2rem;
+    box-shadow: 8px 8px 8px #d2d2d2;
 }
 
 #section-fonctionnement {
@@ -163,7 +165,7 @@ header img {
 }*/
 
 .vignette-fonctionnement__numero {
-    font-size: 12px;
+    font-size: 13px;
     padding: 6px;
     width: 15px;
     height: 15px;
@@ -184,6 +186,7 @@ header img {
     background-color: var(--primaireclair);
     color: var(--primaire);
     transform: scale(1.01);
+    box-shadow: 8px 8px 8px #d2d2d2;
 }
 
 .vignette-fonctionnement:hover .vignette-fonctionnement__icone {
@@ -271,7 +274,7 @@ header img {
     padding-left: 8px;
     color: black;
     font-family: Roboto-Light;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .card-body:hover {
@@ -415,11 +418,12 @@ footer nav ul li i {
 
 }
 
+/*Mode desktop*/
+
 @media screen and (min-width: 993px) {
 
     .fonctionnement {
         display: flex;
-
         flex-wrap: wrap; 
         justify-content: space-between;
     }

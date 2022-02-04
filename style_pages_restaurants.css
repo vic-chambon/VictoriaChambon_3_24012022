@@ -42,7 +42,7 @@ body {
 
 h1 {
     font-family: Shrikhand;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     margin: 0;
     padding-top: 25px;
@@ -52,7 +52,7 @@ h1 {
 
 h2 {
     font-family: Roboto-Light;
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
     padding-left: 10px;
     padding-top: 25px;
@@ -62,7 +62,7 @@ h2 {
 
 h3 {
     font-family: Roboto-Medium;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0 ;
     padding-top:  5px;
     padding-bottom: 5px;
@@ -127,7 +127,7 @@ header a {
 
 .checkbox-heart {
     position: absolute;
-    right: 45px;
+    right: 25px;
     bottom: 30px;
 }
 
@@ -172,7 +172,7 @@ section {
 }
 
 .border-bottom {
-    width: 40px;
+    width: 45px;
     height: 3px;
     background-color: var(--tertiaire);
     margin-left: 10px;
@@ -183,7 +183,7 @@ section {
     margin-top: 18px;
     margin-right: 12px;
     margin-left: 12px;
-    box-shadow: 6px 6px 6px var(--gris3);
+    box-shadow: 8px 8px 8px var(--gris3);
     border-radius: 18px;
     max-width: 100%;
 
@@ -216,7 +216,7 @@ section {
 }
 
 .vignette:hover .vignette__right {
-    width: 20%;
+    width: 100px;
     opacity: 100%;
 }
 
@@ -294,13 +294,14 @@ section {
     justify-content: space-between;
     align-items: center;
     font-family: Roboto-Medium;
-    font-size:  13px;
+    font-size:  14px;
     padding-right: 10px;
     margin-right: 0;
 }
 
 .vignette p {
     font-family: Roboto-Light;
+    font-size: 17px;
     padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 5px;
@@ -321,12 +322,13 @@ section {
 }
 
 .bouton-commander {
-    background: #FF79DA;
+    background: var(--secondaire);
     padding: 15px;
     background: linear-gradient(170deg, var(--secondaire) 20%, var(--primaire) 70%);
     color:  white;
     border-radius: 2rem;
     text-decoration: none;
+    box-shadow: 8px 8px 8px #d2d2d2;
 
 }
 
@@ -375,4 +377,49 @@ footer nav ul li i {
     font-family: Roboto-Light;
 }
 
+/*Mode tablette*/
+
+@media only screen and (min-width : 769px) and (max-width : 992px) {
+
+   
+    .restaurants {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+
+    .card-restaurant {
+        width: 100%;
+        margin-bottom: 25px;
+       
+    }
+
+    .card-restaurant img {
+        width: 100%;
+    }
+
+}
+
+/*Mode desktop*/
+
+@media screen and (min-width: 993px) {
+
+    h2 {
+        width: 100%;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    #section-entrées, #section-plats, #section-desserts {
+        width: 32%;
+    }
+
+    #section-plats, #section-desserts {
+        padding-top: 15px;
+    }
+}
 
