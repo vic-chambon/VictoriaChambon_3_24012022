@@ -37,7 +37,7 @@
 body {
     font-family: 'Roboto-Medium';
     margin: 0;
-
+    position:  relative;
 }
 
 main {
@@ -61,6 +61,87 @@ h2 {
     font-weight: bold;
 }
 
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+    z-index: 6;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+}
+
+.animexit {
+    animation: loader__exit 4000ms;
+    animation-fill-mode: both;
+}
+
+.loader__box {
+    position: relative;
+    display: inline-block;
+}
+
+.loader__anim
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100px;
+
+    background: linear-gradient(170deg, var(--secondaire) 20%, var(--primaire) 70%);
+}
+
+.animlogo {
+    animation: loader__anim 4000ms;
+    /*animation-delay: 150ms;*/
+    animation-fill-mode: both;
+/*    animation-iteration-count: 3;
+*/
+    transform-origin: left;
+    transition-timing-function: linear;    
+}
+
+.loader__img {
+    background-color: transparent;
+}
+
+@keyframes loader__exit {
+    0% {
+        opacity: 1;
+        z-index: 6;
+    }
+
+    95% {
+        opacity: 1;
+        z-index: 6;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -10;
+    }
+}
+
+@keyframes loader__anim {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
 
 header {
     display: flex;
@@ -74,13 +155,7 @@ header img {
     width: 180px;
     height: auto;
 }
-/*
-.linear-gradient {
-  background: linear-gradient(to bottom, var(--gris4), var(--gris3));
-  width: 100%;
-  height:  6px;
-}
-*/
+
 #section-localisation {
     background-color: var(--gris3);
     display: flex;
@@ -150,19 +225,8 @@ header img {
     margin-left: 12px;
     box-shadow: 8px 8px 8px var(--gris3);
 
-    /*transform: scaleX(1);
-    animation-name: vignettes-foncitionnement;*/
 }
 
-
-
-/*.vignette-fonctionnement__numero .vignette-fontionnement__icone .vignette-fonctionnement__texte:hover {
-    color: var(--primaire);
-}*/
-/* 
-.vignette-fonctionnement--over {
-    background-color: var(--primaireclair);
-}*/
 
 .vignette-fonctionnement__numero {
     font-size: 13px;
@@ -192,24 +256,6 @@ header img {
 .vignette-fonctionnement:hover .vignette-fonctionnement__icone {
     color: var(--primaire);
 }
-
-
-/*.vignette-fonctionnement--violet {
-    color: var(--primaire);
-}
-
-.vignette-fonctionnement__texte {
-    
-}*/
-
-/*@keyframes vignettes-fonctionnement {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}*/
 
 
 #section-restaurants {
@@ -336,23 +382,6 @@ header img {
 }
 
 
-/*.icone-coeur:hover::after {
-    opacity: 1;
-}
-
-.icone-coeur::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: red;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 1000ms;
-}
-*/
 footer {
     background-color: var(--gris4);
     padding-left: 18px;
@@ -405,20 +434,7 @@ footer nav a {
 
 @media only screen and (min-width : 769px) and (max-width : 992px) {
 
-   /* #section-fontionnement {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-
-
-    .vignette-fonctionnement {
-        max-width: 31%;
-        
-
-    }*/
-
+   
     .restaurants {
         display: flex;
         flex-wrap: wrap; 

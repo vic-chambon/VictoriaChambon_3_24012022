@@ -105,11 +105,12 @@ header a {
     object-fit: cover;
     width: 100%;
     height: 230px;
-  
+
 }
 
 .card-title {
     display: flex;
+
     justify-content: space-between;
     align-items: center;
     border-radius: 40px 40px 0 0;
@@ -120,12 +121,7 @@ header a {
 
 }
 
-/*.card-restaurant .icone-coeur__base {
-    padding-right: 10px;
-
-}*/
-
-.checkbox-heart {
+/*.checkbox-heart {
     position: absolute;
     right: 25px;
     bottom: 30px;
@@ -162,13 +158,44 @@ header a {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0px;
 }
+*/
+
+.boutonheart {
+    position: relative;
+    right: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boutonheart__off {
+    position: absolute;
+    font-size: 28px;
+    opacity: 1;
+}
+
+.boutonheart__on {
+    position: absolute;
+    font-size: 29px;
+    opacity: 0;
+    background: linear-gradient(162deg, #ff79da 0%, #9356dc 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.boutonheart__on:hover {
+    opacity: 1;
+    transition-duration: 300ms;
+}
 
 section {
     background-color: var(--gris2);
 }
 
 #section-entrées {
-    padding-top: 15px;
+    transform: translateZ(10px); margin-top: 15px;
 }
 
 .border-bottom {
@@ -187,7 +214,7 @@ section {
     border-radius: 18px;
     max-width: 100%;
 
-    animation: menu 2000ms;
+    animation: menu 2s;
     animation-fill-mode: both;
     transform-origin: top;
 
@@ -199,9 +226,7 @@ section {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
     width: 100%;
-
     padding-left: 8px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -220,27 +245,11 @@ section {
     opacity: 100%;
 }
 
-.vignette:hover .bouton-check__rotate {
-    transform: rotate(0deg);
-}
-
-/*@keyframes hover_plat {
-    from {
-    }
-
-    to {
-        transform: translateX(-20%);
-        transition: transform 2000ms;
-    }
-}
-*/
-
 .bouton-check {
     height: 100%;
     width: 100%;
     background-color: var(--tertiaire);
     border-radius: 0 18px 18px 0;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,13 +261,14 @@ section {
     transition: 0.4s ease-in-out;    
 }
 
+.vignette:hover .bouton-check__rotate {
+    transform: rotate(0deg);
+}
+
 .fa-check-circle {
     color: white;
     background-color: var(--tertiaire);
     font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 @keyframes menu {
@@ -304,7 +314,7 @@ section {
     font-size: 17px;
     padding-bottom: 5px;
     padding-top: 5px;
-    padding-left: 5px;
+    padding-left: 0;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -329,9 +339,7 @@ section {
     border-radius: 2rem;
     text-decoration: none;
     box-shadow: 8px 8px 8px #d2d2d2;
-
 }
-
 
 footer {
     background-color: var(--gris4);
