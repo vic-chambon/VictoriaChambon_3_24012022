@@ -79,7 +79,7 @@ h2 {
 }
 
 .animexit {
-    animation: loader__exit 4000ms;
+    animation: loader__exit 3000ms;
     animation-fill-mode: both;
 }
 
@@ -192,8 +192,6 @@ header img {
     text-align: center;
 }
 
-
-
 .bouton-filtre {
     background: var(--secondaire);
     padding: 15px;
@@ -210,7 +208,6 @@ header img {
     padding-left: 18px;
     padding-right: 18px;
     padding-bottom: 20px;
-    
 }
 
 .vignette-fonctionnement {
@@ -224,7 +221,6 @@ header img {
     padding-bottom: 12px;
     margin-left: 12px;
     box-shadow: 8px 8px 8px var(--gris3);
-
 }
 
 
@@ -271,7 +267,6 @@ header img {
     background-color: white;
     margin-bottom: 18px;
     box-shadow: 6px 6px 6px var(--gris3);
-    
 }
 
 .etiquette-nouveau {
@@ -312,7 +307,6 @@ header img {
     width: 100%;
     background-color: white;
     position: relative;
-
 }
 
 .card-body h3 {
@@ -323,7 +317,6 @@ header img {
     color: black;
     font-family: Roboto-Medium;
     font-size: 18px;
-
 }
 
 .card-body p {
@@ -343,44 +336,35 @@ header img {
     background-color: var(--primaireclair);
 }
 
-.checkbox-heart {
-    position: absolute;
-    right: 30px;
-    bottom: 25px;
-}
-
-.fa-heart {
+.boutonheart {
+    position: relative;
+    right: 50px;
+    
     display: flex;
-    align-items: baseline;
-    font-size: 1.5em;
-    cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
 
-.checkbox-heart input[type=checkbox], .checkbox-heart .check {
-    display: none;
+.boutonheart__off {
+    position: absolute;
+    font-size: 28px;
+    opacity: 1;
 }
 
-.checkbox-heart input[type=checkbox]:checked ~ .check {
-    display: inline-block;
-}
-
-.checkbox-heart input[type=checkbox]:checked ~ .uncheck {
-    display: none;
-}
-
-.uncheck {
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-}
-
-.check {
-    background: linear-gradient(#9356DC, #FF79DA);
+.boutonheart__on {
+    position: absolute;
+    font-size: 29px;
+    opacity: 0;
+    background: linear-gradient(162deg, #ff79da 0%, #9356dc 90%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0px;
 }
 
+.boutonheart__on:hover {
+    opacity: 1;
+    transition-duration: 300ms;
+}
 
 footer {
     background-color: var(--gris4);
@@ -405,7 +389,6 @@ footer nav ul {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-
 }
 
 footer nav ul li {
@@ -444,8 +427,6 @@ footer nav a {
     .card-restaurant {
         width: 48%;
         margin-bottom: 25px;
-       
-        
     }
 
 }
@@ -468,12 +449,10 @@ footer nav a {
         display: flex;
         flex-wrap: wrap; 
         justify-content: space-between;
-
     }
 
     .card-restaurant {
         width: 48%;
         margin-bottom: 25px;
-               
     }
 }

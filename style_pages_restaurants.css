@@ -37,7 +37,6 @@
 body {
     font-family: 'Roboto-Medium';
     margin: 0;
-
 }
 
 h1 {
@@ -78,7 +77,6 @@ header {
     height: 50px;
     padding-top: 25px;
     position: relative;
-
 }
 
 header img {
@@ -98,14 +96,12 @@ header a {
     background-color: var(--gris2);
     position: relative;
     margin-bottom: 0;
-
 }
 
 .card-restaurant img {
     object-fit: cover;
     width: 100%;
     height: 230px;
-
 }
 
 .card-title {
@@ -118,47 +114,7 @@ header a {
     bottom: -40px;
     background-color: var(--gris2);
     width: 100%;
-
 }
-
-/*.checkbox-heart {
-    position: absolute;
-    right: 25px;
-    bottom: 30px;
-}
-
-.fa-heart {
-    display: flex;
-    align-items: baseline;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-.checkbox-heart input[type=checkbox], .checkbox-heart .check {
-    display: none;
-}
-
-.checkbox-heart input[type=checkbox]:checked ~ .check {
-    display: inline-block;
-}
-
-.checkbox-heart input[type=checkbox]:checked ~ .uncheck {
-    display: none;
-}
-
-.uncheck {
-    -webkit-text-fill-color: var(--gris2);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-}
-
-.check {
-    background: linear-gradient(#9356DC, #FF79DA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0px;
-}
-*/
 
 .boutonheart {
     position: relative;
@@ -364,7 +320,6 @@ footer nav ul {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-
 }
 
 footer nav ul li {
@@ -404,13 +359,11 @@ footer nav a {
     .card-restaurant {
         width: 100%;
         margin-bottom: 25px;
-       
     }
 
     .card-restaurant img {
         width: 100%;
     }
-
 }
 
 /*Mode desktop*/
@@ -424,7 +377,6 @@ footer nav a {
     #menu {
         display: flex;
         justify-content: space-between;
-
     }
 
     #section-entrées, #section-plats, #section-desserts {
