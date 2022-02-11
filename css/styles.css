@@ -288,6 +288,7 @@ header img {
 .boutonheart__off {
   position: absolute;
   font-size: 28px;
+  color: black;
   opacity: 1;
 }
 .boutonheart__on {

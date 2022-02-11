@@ -111,11 +111,6 @@ h2 {
 }
 
 
-
-
-
-
-
 @keyframes loader__exit {
     0% {
         opacity: 1;
@@ -354,6 +349,7 @@ header {
     &__off {
         position: absolute;
         font-size: 28px;
+        color: black;
         opacity: 1;
     }
 
