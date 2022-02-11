@@ -1,0 +1,345 @@
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("../font/Roboto/Roboto-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto-Light;
+  src: url("../font/Roboto/Roboto-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Shrikhand;
+  src: url("../font/Shrikhand/Shrikhand-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Codes couleurs*/
+body {
+  font-family: "Roboto-Medium";
+  margin: 0;
+}
+
+h1 {
+  font-family: Shrikhand;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+}
+
+h2 {
+  font-family: Roboto-Light;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+h3 {
+  font-family: Roboto-Medium;
+  font-size: 18px;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  padding-top: 25px;
+  position: relative;
+}
+header img {
+  width: 180px;
+  height: auto;
+}
+header a {
+  color: black;
+  display: inline;
+  position: absolute;
+  left: 15px;
+  font-size: 22px;
+}
+
+#menu {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-restaurant {
+  background-color: #f6f6f6;
+  position: relative;
+  margin-bottom: 0;
+}
+.card-restaurant img {
+  object-fit: cover;
+  width: 100%;
+  height: 230px;
+}
+.card-restaurant .card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 40px 40px 0 0;
+  position: absolute;
+  bottom: -40px;
+  background-color: #f6f6f6;
+  width: 100%;
+}
+.card-restaurant .card-title .boutonheart {
+  position: relative;
+  right: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-restaurant .card-title .boutonheart__off {
+  position: absolute;
+  font-size: 28px;
+  opacity: 1;
+}
+.card-restaurant .card-title .boutonheart__on {
+  position: absolute;
+  font-size: 29px;
+  opacity: 0;
+  background: linear-gradient(162deg, #FF79DA 0%, #9356DC 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card-restaurant .card-title .boutonheart__on:hover {
+  opacity: 1;
+  transition-duration: 300ms;
+}
+
+section {
+  background-color: #f6f6f6;
+}
+
+.border-bottom {
+  width: 45px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-left: 10px;
+}
+
+#section-entrees {
+  transform: translateZ(10px);
+  margin-top: 15px;
+}
+
+.vignette {
+  background-color: white;
+  margin-top: 18px;
+  box-shadow: 8px 8px 8px #eaeaea;
+  border-radius: 18px;
+  max-width: 100%;
+  animation: menu 2s;
+  animation-fill-mode: both;
+  transform-origin: top;
+  display: flex;
+  justify-content: space-between;
+}
+.vignette__left {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding-left: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.vignette__right {
+  width: 0;
+  min-height: 100%;
+  transform-origin: 100% 50%;
+  opacity: 0;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+.vignette p {
+  font-family: Roboto-Light;
+  font-size: 17px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.vignette .vignette-excerpt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto-Medium;
+  font-size: 14px;
+  padding-right: 10px;
+  margin-right: 0;
+}
+
+.vignette:hover .vignette__right {
+  width: 100px;
+  opacity: 100%;
+}
+
+.bouton-check {
+  height: 100%;
+  width: 100%;
+  background-color: #99E2D0;
+  border-radius: 0 18px 18px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bouton-check__rotate {
+  transform: rotate(360deg);
+  transition: 0.4s ease-in-out;
+}
+
+.vignette:hover .bouton-check__rotate {
+  transform: rotate(0deg);
+}
+
+.fa-check-circle {
+  color: white;
+  background-color: #99E2D0;
+  font-size: 30px;
+}
+
+@keyframes menu {
+  from {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.delay-1-seconds {
+  animation-delay: 0.3s;
+}
+
+.delay-2-seconds {
+  animation-delay: 0.6s;
+}
+
+.delay-3-seconds {
+  animation-delay: 0.9s;
+}
+
+.delay-4-seconds {
+  animation-delay: 1.2s;
+}
+
+.padding-bottom {
+  padding-bottom: 10px;
+}
+
+#commande {
+  background-color: #f6f6f6;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bouton-commander {
+  background: #FF79DA;
+  padding: 15px;
+  background: linear-gradient(170deg, #FF79DA 20%, #9356DC 70%);
+  color: white;
+  border-radius: 2rem;
+  text-decoration: none;
+  box-shadow: 8px 8px 8px #d2d2d2;
+}
+
+footer {
+  background-color: #404040;
+  padding-left: 18px;
+}
+footer h4 {
+  font-family: Shrikhand;
+  font-size: 20px;
+  color: white;
+  padding: 10px 0 10px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+footer nav {
+  color: white;
+}
+footer nav a {
+  color: white;
+  text-decoration: none;
+}
+footer nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+footer nav ul li {
+  font-family: Roboto-Medium;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+footer nav ul li i {
+  padding-right: 12px;
+}
+footer nav ul li .largeur-min {
+  min-width: 20px;
+}
+footer nav ul li .font {
+  font-family: Roboto-Light;
+}
+
+/*Mode tablette*/
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card-restaurant {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .card-restaurant img {
+    width: 100%;
+  }
+}
+/*Mode desktop*/
+@media screen and (min-width: 993px) {
+  .card-restaurant img {
+    width: 100%;
+  }
+
+  #menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #section-entrees, #section-plats, #section-desserts {
+    width: 32%;
+  }
+
+  #section-plats, #section-desserts {
+    padding-top: 15px;
+  }
+}
+
+/*# sourceMappingURL=style_pages_restaurants.css.map */
